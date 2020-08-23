@@ -4,6 +4,7 @@
     android:layout_width="match_parent"
     android:layout_height="wrap_content"
     android:id="@+id/mainLayout"
+    android:layout_margin="5dp"
     android:orientation="vertical"
     app:cardCornerRadius="15dp">
 
@@ -11,16 +12,15 @@
         android:id="@+id/cardLayout"
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
-        android:layout_margin="5dp"
-        android:background="@drawable/chat_border"
         android:orientation="vertical"
+        android:background="@drawable/chat_border"
         app:cardCornerRadius="15dp">
 
         <LinearLayout
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
             android:orientation="horizontal"
-            android:padding="5dp">
+            >
 
             <ImageView
                 android:id="@+id/image"
@@ -28,7 +28,6 @@
                 android:layout_height="108dp"
                 android:layout_marginStart="4dp"
                 android:layout_marginEnd="4dp"
-                android:layout_marginTop="11dp"
                 android:scaleType="fitXY" />
 
             <LinearLayout
@@ -41,12 +40,11 @@
                     android:layout_width="match_parent"
                     android:layout_height="wrap_content"
                     android:layout_marginStart="5dp"
-                    android:layout_marginTop="10dp"
                     android:textAllCaps="true"
                     android:text="@string/product_name"
                     android:textAlignment="textStart"
                     android:textColor="@android:color/black"
-                    android:textSize="16sp"
+                    android:textSize="13sp"
                     android:textStyle="bold" />
 
 
@@ -55,7 +53,7 @@
                     android:layout_height="wrap_content"
                     android:layout_marginStart="5dp"
                     android:orientation="horizontal"
-                    android:padding="2dp">
+                    >
 
                     <TextView
                         android:id="@+id/text"
@@ -63,7 +61,7 @@
                         android:layout_height="wrap_content"
                         android:text="Ksh."
                         android:textColor="@android:color/holo_blue_light"
-                        android:textSize="13sp"
+                        android:textSize="10sp"
                         android:textStyle="bold" />
 
                     <TextView
@@ -72,7 +70,7 @@
                         android:layout_height="wrap_content"
                         android:text="@string/price"
                         android:textColor="@android:color/black"
-                        android:textSize="16sp" />
+                        android:textSize="13sp" />
 
                 </LinearLayout>
 
@@ -81,7 +79,6 @@
                     android:layout_width="wrap_content"
                     android:layout_height="wrap_content"
                     android:text="@string/weight"
-                    android:layout_marginTop="5dp"
                     android:layout_marginStart="5dp"
                     android:textColor="@android:color/black"
                     android:textSize="16sp" />
@@ -97,7 +94,6 @@
                         android:id="@+id/delete"
                         android:layout_width="30dp"
                         android:layout_height="30dp"
-                        android:layout_marginTop="10dp"
                         android:background="@drawable/trash"
                         android:textSize="13sp"
                         android:textStyle="bold" />
@@ -105,9 +101,8 @@
                     <Button
                         android:id="@+id/subtract"
                         android:layout_width="30dp"
-                        android:layout_height="19dp"
+                        android:layout_height="30dp"
                         android:layout_marginStart="20dp"
-                        android:layout_marginTop="10dp"
                         android:background="@drawable/subtract" />
 
                     <TextView
@@ -115,7 +110,6 @@
                         android:layout_width="wrap_content"
                         android:layout_height="wrap_content"
                         android:layout_marginStart="10dp"
-                        android:layout_marginTop="10dp"
                         android:text="@string/quantity"
                         android:textAlignment="center"
                         android:textColor="@android:color/black"
@@ -126,7 +120,6 @@
                         android:layout_width="30dp"
                         android:layout_height="30dp"
                         android:layout_marginStart="10dp"
-                        android:layout_marginTop="10dp"
                         android:background="@drawable/add" />
 
                 </LinearLayout>
